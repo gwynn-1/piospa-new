@@ -25,10 +25,11 @@ options={
             }
         },
         pageSize: 10,
-        saveState: {
-            cookie: true,
-            webstorage: true
-        },
+        saveState:false,
+        // saveState: {
+        //     cookie: true,
+        //     webstorage: true
+        // },
 
         serverPaging: true,
         serverFiltering: true,
@@ -72,23 +73,6 @@ options={
     sortable: true,
 
     pagination: true,
-
-    search: {
-        // enable trigger search by keyup enter
-        // onEnter: false,
-        // input text for search
-        // input: $('#generalSearch'),
-        // search delay in milliseconds
-        // delay: 700,
-    },
-
-    // detail: {
-    //     title: 'Load sub table',
-    //     content: function (e) {
-    //         // e.data
-    //         // e.detailCell
-    //     }
-    // },
 
     rows: {
         callback: function() {},
@@ -182,7 +166,6 @@ options={
                         '        </div>\n' +
                         '    </div>';
                 }
-
             }
     },
         {
@@ -264,19 +247,6 @@ options={
 };
 var datatable = $('#m_datatable').mDatatable(options);
 
-var _search= function(){
-    is_active = $("select.m-input").val();
-    search_type = $(".search-type").val();
-    text_value = $("#generalSearch").val();
-    column = "search";
-    value = {
-        search_type:search_type,
-        search_keyword:text_value,
-        is_active:is_active
-    };
-    datatable.search(value,column);
-}
-
 $(document).ready(function () {
     $(document).on("change", ".btn-is-active input", function () {
         // alert("ssss");
@@ -284,19 +254,15 @@ $(document).ready(function () {
         service.changeStatus($(this), $(this).attr("data-id"), $(this).attr("act"));
     });
 
+    var page_size=10;
+
+    $(document).on("mouseover","#autotable .m-datatable__pager-info ul li",function () {
+        page_size = $(this).find("span").html();
+    });
 
     $("#m_datatable").on("m-datatable--on-update-perpage", function (e, args) {
-        alert($(".selectpicker").attr("title"));
-        // console.log(e);
-        // console.log(args);
-    });
 
-    $(".frmFilter").submit(function (e) {
-        e.preventDefault();
-        _search();
+        console.log(page_size);
+        args.perpage = page_size;
     });
-
-    $("select.m-input").change(function () {
-        _search();
-    })
 });

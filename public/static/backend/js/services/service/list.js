@@ -43,9 +43,9 @@ var service = {
         });
     }
 }
-// $('#autotable').PioTable({
-//     baseUrl: laroute.route('services.list')
-// });
+$('#autotable').PioTable({
+    baseUrl: laroute.route('services.list')
+});
 
 $(document).ready(function () {
     $("#formExport").validate({

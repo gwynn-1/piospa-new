@@ -9,6 +9,7 @@ $.widget('dai.PioTable', {
 	_filter_data: '',
 	_cur_page: 1,
 	_per_page: 10,
+	_column:"search",
 	
 	_init: function()
 	{
@@ -28,20 +29,28 @@ $.widget('dai.PioTable', {
 	_blindEvent: function()
 	{
 		let o = this;
-		o.element.find('ul.m-datatable__pager-nav > li > a[data-page]').off('click').click(function(){
-			o._loadPage($(this).data('page'));
-		});
-		
-		o.element.find('.m-datatable__pager-info .selectpicker').change(function() {
-			o._display($(this).val());
-		});
-		o.element.find('.m-datatable__pager-info .selectpicker').selectpicker();
+		// o.element.find('ul.m-datatable__pager-nav > li > a[data-page]').off('click').click(function(){
+		// 	o._loadPage($(this).data('page'));
+		// });
+
+		// o.element.find('.m-datatable__pager-info .selectpicker').change(function() {
+		// 	o._display($(this).val());
+		// });
+		// o.element.find('.m-datatable__pager-info .selectpicker').selectpicker();
 	},
 	
 	_search: function()
 	{
 		let o = this;
-		o._filter_data = o.element.find(o.options.frm_filter).serialize();
+        is_active = o.element.find(o.options.frm_filter).find('select.m-input').val();
+        search_type = o.element.find(o.options.frm_filter).find(".search-type").val();
+        text_value = o.element.find(o.options.frm_filter).find("#generalSearch").val();
+        o._filter_data = {
+            search_type:search_type,
+            search_keyword:text_value,
+            is_active:is_active
+        };
+		// o._filter_data = o.element.find(o.options.frm_filter).serialize();
 		o._loadPage(1);
 	},
 	
@@ -61,12 +70,14 @@ $.widget('dai.PioTable', {
 	_loadData: function()
 	{
 		let o = this;
-		$.post(o.options.baseUrl, o._mergeData(o._filter_data, 'page=' + o._cur_page + '&display=' + o._per_page), function(resp) {
-
-			// o.element.find('.table-content').html(resp);
-			datatable.reload();
-			o._blindEvent();
-		});
+		// $.post(o.options.baseUrl, o._mergeData(o._filter_data, 'page=' + o._cur_page + '&display=' + o._per_page), function(resp) {
+        //
+		// 	// o.element.find('.table-content').html(resp);
+		// 	datatable.reload();
+		// 	o._blindEvent();
+		// });
+		datatable.search(o._filter_data,o._column);
+        o._blindEvent();
 	},
 	
 	// merge filter data and page
