@@ -75,11 +75,11 @@ options={
 
     search: {
         // enable trigger search by keyup enter
-        onEnter: false,
+        // onEnter: false,
         // input text for search
-        input: $('#generalSearch'),
+        // input: $('#generalSearch'),
         // search delay in milliseconds
-        delay: 700,
+        // delay: 700,
     },
 
     // detail: {
@@ -168,17 +168,13 @@ options={
             template: function (row) {
 
                 if(row.is_active==1)
-                    // return '<div class="btn-is-active bootstrap-switch-id-m_notify_url bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate bootstrap-switch-on" act="publish" data-id="'+row.service_id+'" style="width: 112px;"><div class="bootstrap-switch-container" style="width: 165px; margin-left: 0px;"><span class="bootstrap-switch-handle-on bootstrap-switch-brand" style="width: 55px;">ON</span><span class="bootstrap-switch-label" style="width: 55px;">&nbsp;</span><span class="bootstrap-switch-handle-off bootstrap-switch-default" style="width: 55px;">OFF</span><input data-switch="true" data-on-color="brand" id="m_notify_url" type="checkbox"></div></div>';
                     return '<div class="btn-is-active pretty p-switch p-fill" >\n' +
                         '        <input type="checkbox" checked data-id="'+row.service_id+'" act="publish"/>\n' +
                         '        <div class="state p-success">\n' +
                         '            <label>Hoạt động</label>\n' +
                         '        </div>\n' +
                         '    </div>';
-                    // return "<button class='btn-is-active btn btn-sm m-btn--pill m-btn--air btn-danger' data-id='"+row.service_id+"' act='publish'>Đang hoạt động</button>";
                 else{
-                    // return "<button class='btn-is-active btn btn-sm m-btn--pill m-btn--air btn-metal' data-id='"+row.service_id+"' act='unPublish'>Tạm ngưng</button>";
-                    // return '<div class="btn-is-active bootstrap-switch-id-m_notify_url bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate bootstrap-switch-off" data-id="'+row.service_id+'" act="unPublish" style="width: 112px;"><div class="bootstrap-switch-container" style="width: 165px; margin-left: -55px;"><span class="bootstrap-switch-handle-on bootstrap-switch-brand" style="width: 55px;">ON</span><span class="bootstrap-switch-label" style="width: 55px;">&nbsp;</span><span class="bootstrap-switch-handle-off bootstrap-switch-default" style="width: 55px;">OFF</span><input data-switch="true" data-on-color="brand" id="m_notify_url" type="checkbox"></div></div>'
                     return '<div class="btn-is-active pretty p-switch p-fill" >\n' +
                         '        <input type="checkbox" data-id="'+row.service_id+'" act="unPublish" />\n' +
                         '        <div class="state p-success">\n' +
@@ -267,24 +263,40 @@ options={
     // }
 };
 var datatable = $('#m_datatable').mDatatable(options);
+
+var _search= function(){
+    is_active = $("select.m-input").val();
+    search_type = $(".search-type").val();
+    text_value = $("#generalSearch").val();
+    column = "search";
+    value = {
+        search_type:search_type,
+        search_keyword:text_value,
+        is_active:is_active
+    };
+    datatable.search(value,column);
+}
+
 $(document).ready(function () {
-    $(document).on("change",".btn-is-active input",function () {
+    $(document).on("change", ".btn-is-active input", function () {
         // alert("ssss");
-        $(this).prop("disabled",true);
-        service.changeStatus($(this),$(this).attr("data-id"),$(this).attr("act"));
+        $(this).prop("disabled", true);
+        service.changeStatus($(this), $(this).attr("data-id"), $(this).attr("act"));
     });
 
-    // $("#m_datatable .btn-group .selectpicker").on("change",function () {
-    //     alert($(this).val());
-    // });
 
-    $("#m_datatable").on("m-datatable--on-update-perpage",function (e,args) {
+    $("#m_datatable").on("m-datatable--on-update-perpage", function (e, args) {
         alert($(".selectpicker").attr("title"));
         // console.log(e);
         // console.log(args);
     });
 
-    // $(".selectpicker").click(function () {
-    //     alert("ssssssssss");
-    // })
-})
+    $(".frmFilter").submit(function (e) {
+        e.preventDefault();
+        _search();
+    });
+
+    $("select.m-input").change(function () {
+        _search();
+    })
+});

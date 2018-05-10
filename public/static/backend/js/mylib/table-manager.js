@@ -63,7 +63,8 @@ $.widget('dai.PioTable', {
 		let o = this;
 		$.post(o.options.baseUrl, o._mergeData(o._filter_data, 'page=' + o._cur_page + '&display=' + o._per_page), function(resp) {
 
-			o.element.find('.table-content').html(resp);
+			// o.element.find('.table-content').html(resp);
+			datatable.reload();
 			o._blindEvent();
 		});
 	},
