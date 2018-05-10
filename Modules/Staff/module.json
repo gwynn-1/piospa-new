@@ -1,0 +1,18 @@
+{
+    "name": "Staff",
+    "alias": "staff",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Staff\\Providers\\StaffServiceProvider",
+        "Modules\\Staff\\Providers\\RepositoryServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}
+

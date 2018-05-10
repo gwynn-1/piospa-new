@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/staffaccount",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\StaffAccount\\Providers\\StaffAccountServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\StaffAccount\\": ""
+        }
+    }
+}
