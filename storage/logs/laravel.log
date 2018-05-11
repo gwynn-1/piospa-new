@@ -5493,3 +5493,13 @@ Did you mean one of these?
 #54 E:\\XAMPP\\htdocs\\piospa-new\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #55 {main}
 "} 
+[2018-05-11 02:55:38] local.ERROR: There are no commands defined in the "generate" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): There are no commands defined in the \"generate\" namespace. at E:\\XAMPP\\htdocs\\piospa-new\\vendor\\symfony\\console\\Application.php:564)
+[stacktrace]
+#0 E:\\XAMPP\\htdocs\\piospa-new\\vendor\\symfony\\console\\Application.php(604): Symfony\\Component\\Console\\Application->findNamespace('generate')
+#1 E:\\XAMPP\\htdocs\\piospa-new\\vendor\\symfony\\console\\Application.php(229): Symfony\\Component\\Console\\Application->find('generate:larout...')
+#2 E:\\XAMPP\\htdocs\\piospa-new\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\XAMPP\\htdocs\\piospa-new\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(88): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\XAMPP\\htdocs\\piospa-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(121): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 E:\\XAMPP\\htdocs\\piospa-new\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 

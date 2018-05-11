@@ -126,10 +126,16 @@ options={
         title: "Hình ảnh",
         sortable: 'asc',
         filterable: false,
-        width: 80,
+        width: 100,
         responsive: {visible: 'md'},
             // locked: {left: 'xl'},
-        template: '{{services_image}}',
+        // template: '{{services_image}}'
+        template:function (row) {
+            if(row.services_image != null)
+                return '<a target="_blank" href="'+laroute.route("uploads")+row.services_image+'"><img src="'+laroute.route("uploads")+row.services_image+'" alt="Hình ảnh" width="95" height="70"/></a>';
+            else
+                return '<img src="'+laroute.route("uploads")+row.services_image+'" alt="Hình ảnh" width="95" height="70"/>';
+        }
     },
     {
             field: "detail",

@@ -68,17 +68,16 @@ class ServicesController extends Controller
      */
     public function listAction(Request $request)
     {
-        $filters = $request->only(['page', 'display', 'search_type', 'search_keyword', 'sv$is_active']);
+//        $filters = $request->only(['page', 'display', 'search_type', 'search_keyword', 'sv$is_active']);
         $pagination = $request->input("pagination");
         $query = $request->input("query");
-//        dd($pagination);
+
         $filters["page"] = $pagination["page"];
         $filters["display"] = $pagination["perpage"];
         $filters["search_keyword"] = $query["search"]['search_keyword'];
         $filters["search_type"] = $query["search"]['search_type'];
         $filters['sv$is_active'] = $query["search"]['is_active'];
         $serviceList = $this->service->list($filters);
-//        dd($serviceList);
 //        return view('service::services.list', ['LIST' => $serviceList]);
         $meta = [
             "page"=>$serviceList->currentPage(),
@@ -90,7 +89,7 @@ class ServicesController extends Controller
             "meta"=>$meta,
             "data"=>$serviceList->items()
         ];
-//        dd($response);
+
         return response()->json($response);
     }
 

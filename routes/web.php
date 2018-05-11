@@ -15,6 +15,6 @@ Route::get('/', function () {
     return redirect()->route('user');
 });
 
-
+Route::get("/uploads")->name("uploads");
 #Route::get('/', 'IndexController@indexAction')->name('home');
 #Route::match(['get', 'post'], '/login', 'LoginController@indexAction');
