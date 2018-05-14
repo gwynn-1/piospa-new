@@ -28,7 +28,7 @@
                                     <div class="form-group m-form__group row align-items-center">
                                         <div class="input-group col-xs-10">
                                             <div class="input-group-append">
-                                                <select class="form-control search-type" name="search_type">
+                                                <select class="form-control search-type" id="typeSearch" name="search_type">
                                                     <option value="service_name">Tên</option>
                                                     <option value="service_code">Mã</option>
                                                 </select>

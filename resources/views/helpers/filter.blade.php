@@ -12,7 +12,7 @@
     				{{ $item['text'] }}
     			</span>
     		</div>
-    		{!! Form::select($name, $item['data'], $item['default'] ?? null, ['class' => 'form-control m-input']) !!}
+    		{!! Form::select($name, $item['data'], $item['default'] ?? null, ['class' => 'form-control m-input','id'=>'isActiveSearch']) !!}
     	</div>
     @endforeach
 </div>

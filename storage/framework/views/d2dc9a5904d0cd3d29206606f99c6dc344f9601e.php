@@ -13,7 +13,7 @@
 
     			</span>
     		</div>
-    		<?php echo Form::select($name, $item['data'], $item['default'] ?? null, ['class' => 'form-control m-input']); ?>
+    		<?php echo Form::select($name, $item['data'], $item['default'] ?? null, ['class' => 'form-control m-input','id'=>'isActiveSearch']); ?>
 
     	</div>
     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

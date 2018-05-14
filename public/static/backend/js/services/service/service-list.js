@@ -5,8 +5,7 @@ options={
             read: {
                 url: laroute.route("services.list"),
                 method: 'POST',
-                // custom headers
-                headers: { 'x-my-custom-header': 'some value', 'x-test-header': 'the value'},
+                headers: { },
                 params: {
                     // custom parameters
                     // generalSearch: '',
@@ -152,25 +151,39 @@ options={
             title: "Trạng thái",
             sortable: 'asc',
             filterable: false,
-            width: 120,
+            width: 150,
             responsive: {visible: 'md'},
             // locked: {left: 'xl'},
             template: function (row) {
 
                 if(row.is_active==1)
-                    return '<div class="btn-is-active pretty p-switch p-fill" >\n' +
-                        '        <input type="checkbox" checked data-id="'+row.service_id+'" act="publish"/>\n' +
-                        '        <div class="state p-success">\n' +
-                        '            <label>Hoạt động</label>\n' +
-                        '        </div>\n' +
-                        '    </div>';
+                    // return '<div class="btn-is-active pretty p-switch p-fill" >\n' +
+                    //     '        <input type="checkbox" checked data-id="'+row.service_id+'" act="publish"/>\n' +
+                    //     '        <div class="state p-success">\n' +
+                    //     '            <label>Hoạt động</label>\n' +
+                    //     '        </div>\n' +
+                    //     '    </div>';
+                    return '<div class="m-switch m-switch--success m-switch--sm">\n' +
+                        '<label class="btn-is-active" style="margin: .5rem 0 0 0">\n' +
+                        '<input type="checkbox" checked="checked" name="" data-id="'+row.service_id+'" act="publish">\n' +
+                        '<span></span>\n' +
+                        '<label style="margin: 0 0 0 10px; padding-top: 4px">Hoạt động</label>'+
+                        '</label>\n' +
+                        '</div>\n';
                 else{
-                    return '<div class="btn-is-active pretty p-switch p-fill" >\n' +
-                        '        <input type="checkbox" data-id="'+row.service_id+'" act="unPublish" />\n' +
-                        '        <div class="state p-success">\n' +
-                        '            <label>Tạm ngưng</label>\n' +
-                        '        </div>\n' +
-                        '    </div>';
+                    // return '<div class="btn-is-active pretty p-switch p-fill" >\n' +
+                    //     '        <input type="checkbox" data-id="'+row.service_id+'" act="unPublish" />\n' +
+                    //     '        <div class="state p-success">\n' +
+                    //     '            <label>Tạm ngưng</label>\n' +
+                    //     '        </div>\n' +
+                    //     '    </div>';
+                    return '<div class="m-switch m-switch--success m-switch--sm">\n' +
+                        '<label class="btn-is-active" style="margin: .5rem 0 0 0">\n' +
+                        '<input type="checkbox" name="" data-id="'+row.service_id+'" act="unPublish">\n' +
+                        '<span></span>\n' +
+                        '<label style="margin: 0 0 0 10px; padding-top: 4px">Tạm ngưng</label>'+
+                        '</label>\n' +
+                        '</div>\n';
                 }
             }
     },
@@ -267,8 +280,7 @@ $(document).ready(function () {
     });
 
     $("#m_datatable").on("m-datatable--on-update-perpage", function (e, args) {
-
-        console.log(page_size);
+        // alert(args.perpage);
         args.perpage = page_size;
     });
 });

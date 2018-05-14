@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="aa1f2f6d-3092-4fc4-94e4-c0ca588fba0b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Services/Http/Controllers/ServicesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Services/Http/Controllers/ServicesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/laroute.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/laroute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Services/Resources/views/services/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Services/Resources/views/services/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/static/backend/js/services/service/service-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/backend/js/services/service/service-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/Zw57ZhRorJ8PQWr2Sv0Fe2P2Sxc4UTuXcYuu2ASe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/helpers/filter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/helpers/filter.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/AE7f6d7G21RmUTGvJraKnGJXLw6s6osyNYrydwRL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/35e212c584a94ee486ec39a3ab7fa90b18471b1b.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/35e212c584a94ee486ec39a3ab7fa90b18471b1b.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d2dc9a5904d0cd3d29206606f99c6dc344f9601e.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/d2dc9a5904d0cd3d29206606f99c6dc344f9601e.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +35,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="filter.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/helpers/filter.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="service-list.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/static/backend/js/services/service/service-list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="136" column="34" lean-forward="true" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
+            <state relative-caret-position="299">
+              <caret line="181" column="47" selection-start-line="181" selection-start-column="47" selection-end-line="181" selection-end-column="47" />
+              <folding>
+                <element signature="n#style#0;n#label#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#label#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#label#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,15 +71,8 @@
       <file leaf-file-name="scripts.bundle.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/static/backend/assets/demo/demo9/base/scripts.bundle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="1434" column="75" selection-start-line="1434" selection-start-column="70" selection-end-line="1434" selection-end-column="75" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="57936">
+              <caret line="3408" column="41" selection-start-line="3408" selection-start-column="41" selection-end-line="3408" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -80,8 +89,8 @@
       <file leaf-file-name="list.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/static/backend/js/services/service/list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+            <state relative-caret-position="765">
+              <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="47" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -89,8 +98,8 @@
       <file leaf-file-name="table-manager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/static/backend/js/mylib/table-manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+            <state relative-caret-position="690">
+              <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -107,8 +116,8 @@
       <file leaf-file-name="ServicesController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/Services/Http/Controllers/ServicesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="115" column="38" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
+            <state relative-caret-position="1224">
+              <caret line="82" column="48" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -145,6 +154,8 @@
       <find>autotab</find>
       <find>theme</find>
       <find>upload</find>
+      <find>search</find>
+      <find>m_form_status</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -177,13 +188,14 @@
         <option value="$PROJECT_DIR$/public/static/backend/js/admin/appointment/my-calendar.js" />
         <option value="$PROJECT_DIR$/Modules/Services/Resources/views/services/services-list.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Services/Resources/views/services/index.blade.php" />
-        <option value="$PROJECT_DIR$/public/static/backend/js/services/service/list.js" />
         <option value="$PROJECT_DIR$/public/static/backend/js/mylib/table-manager.js" />
         <option value="$PROJECT_DIR$/Modules/Services/Http/Controllers/ServicesController.php" />
-        <option value="$PROJECT_DIR$/public/static/backend/assets/demo/demo9/base/scripts.bundle.js" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/public/js/laroute.js" />
+        <option value="$PROJECT_DIR$/resources/views/helpers/filter.blade.php" />
+        <option value="$PROJECT_DIR$/public/static/backend/assets/demo/demo9/base/scripts.bundle.js" />
+        <option value="$PROJECT_DIR$/Modules/Services/Resources/views/services/index.blade.php" />
+        <option value="$PROJECT_DIR$/public/static/backend/js/services/service/list.js" />
         <option value="$PROJECT_DIR$/public/static/backend/js/services/service/service-list.js" />
       </list>
     </option>
@@ -302,12 +314,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="piospa-new" type="b2602c69:ProjectViewProjectNode" />
               <item name="piospa-new" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="piospa-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="piospa-new" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="piospa-new" type="b2602c69:ProjectViewProjectNode" />
@@ -323,37 +341,22 @@
               <item name="piospa-new" type="b2602c69:ProjectViewProjectNode" />
               <item name="piospa-new" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="piospa-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="piospa-new" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="piospa-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="piospa-new" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="piospa-new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="piospa-new" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="piospa-new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="piospa-new" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="piospa-new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="piospa-new" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="piospa-new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="piospa-new" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="20180509" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="piospa-new" type="b2602c69:ProjectViewProjectNode" />
@@ -369,13 +372,19 @@
             <path>
               <item name="piospa-new" type="b2602c69:ProjectViewProjectNode" />
               <item name="piospa-new" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="piospa-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="piospa-new" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,7 +428,12 @@
       <workItem from="1525831384547" duration="37151000" />
       <workItem from="1525924695681" duration="464000" />
       <workItem from="1525930928600" duration="18098000" />
-      <workItem from="1526002006044" duration="5331000" />
+      <workItem from="1526002006044" duration="5619000" />
+      <workItem from="1526026525239" duration="33000" />
+      <workItem from="1526117242455" duration="7250000" />
+      <workItem from="1526143469041" duration="2414000" />
+      <workItem from="1526188872127" duration="16000" />
+      <workItem from="1526280576497" duration="5095000" />
     </task>
     <task id="LOCAL-00001" summary="Add Temporary Menu">
       <created>1524028966564</created>
@@ -439,7 +453,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105880000" />
+    <option name="totallyTimeSpent" value="120976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -449,10 +463,10 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32847896" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32792208" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837664" visible="true" weight="0.16944024" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837664" visible="true" weight="0.18078668" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
@@ -478,10 +492,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add Temporary Menu" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
+    <entry file="file://$PROJECT_DIR$/Modules/Services/Http/Controllers/ServicesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="120" selection-start-line="30" selection-start-column="88" selection-end-line="30" selection-end-column="120" />
+        <state relative-caret-position="1785">
+          <caret line="115" column="38" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -737,20 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/helpers/filter.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Services/Resources/views/services/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="80" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -758,52 +758,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Services/Resources/views/services/list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/backend/js/services/service/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/backend/assets/vendors/base/vendors.bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Services/Http/Controllers/ServicesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="115" column="38" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/backend/assets/demo/demo9/base/scripts.bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="1434" column="75" selection-start-line="1434" selection-start-column="70" selection-end-line="1434" selection-end-column="75" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/backend/js/mylib/table-manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -821,10 +779,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Services/Resources/views/services/list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Services/Resources/views/services/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="80" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/helpers/filter.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/backend/assets/demo/demo9/base/scripts.bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57936">
+          <caret line="3408" column="41" selection-start-line="3408" selection-start-column="41" selection-end-line="3408" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/backend/js/services/service/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="47" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Services/Http/Controllers/ServicesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="82" column="48" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/backend/js/mylib/table-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/backend/js/services/service/service-list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="136" column="34" lean-forward="true" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
+        <state relative-caret-position="299">
+          <caret line="181" column="47" selection-start-line="181" selection-start-column="47" selection-end-line="181" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#label#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#label#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
